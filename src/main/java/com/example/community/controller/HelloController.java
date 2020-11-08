@@ -12,7 +12,6 @@ public class HelloController {
     public String hello(@RequestParam(name = "name") String name, Model model){
         model.addAttribute("name",name);
         System.out.println("1输出");
-        System.out.println("11");
         return "hello";
     }
 }
